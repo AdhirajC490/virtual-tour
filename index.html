@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual Tour</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    <script src = "js/tour.js"></script>
+  </head>
+  <body>
+    <a-scene id = "main-scene">
+      <a-sky id = "main-container" color = "#ffab91"></a-sky>
+
+      <a-camera id = "camera">
+      </a-camera>
+      <a-entity id = "appTitle" position = "0 2 -1" text = "font:exo2bold; width:2; align:center; color:#000; value:It's time to travel virtually"></a-entity>
+      <a-entity id = "subtitle" position = "0 1.9 -1" text = "font:dejavu; width:1.5; align:center; color:#000;value:Travel around the world"></a-entity>
+      
+      <a-entity id = "placesContainer" tour></a-entity>
+
+    </a-scene>
+  </body>
+</html>
